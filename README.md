@@ -187,14 +187,6 @@ x402/
 ├── server.py             # X402 payment server
 ├── fastApi.py            # Weather API endpoint
 ├── pyproject.toml        # Dependencies
-└── uagents-adapter/      # MCP adapter package
-    ├── src/
-    │   └── uagents_adapter/
-    │       ├── mcp/
-    │       │   ├── adapter.py    # MCP server adapter
-    │       │   └── protocol.py   # MCP protocol definitions
-    │       └── ...
-    └── pyproject.toml
 ```
 
 ### Running Tests
@@ -247,8 +239,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Resources
 
-- [Fetch.ai uAgents Documentation](https://docs.fetch.ai/uAgents)
-- [MCP Protocol Specification](https://modelcontextprotocol.io/)
+- [Fetch.ai uAgents Documentation](https://fetch.ai/docs)
 - [Base Sepolia Testnet](https://base.org/docs/network-information)
 - [WeatherAPI.com](https://www.weatherapi.com/)
 - [ASI1 API Documentation](https://api.asi1.ai/)
