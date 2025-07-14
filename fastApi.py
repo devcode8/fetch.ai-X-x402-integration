@@ -15,8 +15,8 @@ load_dotenv()
 app = FastAPI()
 
 # Get wallet address from environment or use default
-RECIPIENT_WALLET = os.getenv("RECIPIENT_WALLET", "0x9953a068639e409133baAcdd4513D9637D20132f")
-PAYMENT_AMOUNT = os.getenv("PAYMENT_AMOUNT", "0.00000001")
+RECIPIENT_WALLET = os.getenv("RECIPIENT_WALLET")
+PAYMENT_AMOUNT = os.getenv("PAYMENT_AMOUNT")
 WEATHER_API_KEY = os.getenv("WEATHER_API_KEY")
 
 def get_weather_data(location: str) -> dict:
