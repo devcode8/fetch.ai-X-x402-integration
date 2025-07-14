@@ -215,23 +215,6 @@ poetry run python -c "from server import check_transaction_signing; print(check_
    - Check weather API key validity
    - Verify network connectivity to Base Sepolia
 
-### Debug Commands
-
-```bash
-# Check wallet status
-poetry run python -c "from server import w3, account; print(f'Address: {account.address}'); print(f'Balance: {w3.eth.get_balance(account.address)/10**18} ETH')"
-
-# Test weather API
-curl "http://localhost:4021/weather?location=London"
-```
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests if applicable
-5. Submit a pull request
 
 ## License
 
