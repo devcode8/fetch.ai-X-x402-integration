@@ -2,11 +2,16 @@
 from uagents_adapter import MCPServerAdapter
 from server import mcp
 from uagents import Agent
+import os
+from dotenv import load_dotenv
+
+
+load_dotenv()
 
 # Create an MCP adapter with your MCP server
 mcp_adapter = MCPServerAdapter(
     mcp_server=mcp,                    
-    asi1_api_key="sk_d1f44feafaea4b6896123e5573182e5edc5499b1d0554b8bbf54e8d6887ff12c",  
+    asi1_api_key= os.getenv("ASI_API_KEY"),  
     model="asi1-mini"          
 )
 
