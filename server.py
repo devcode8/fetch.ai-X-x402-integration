@@ -15,7 +15,7 @@ load_dotenv()
 
 # Configuration
 PRIVATE_KEY = os.getenv("PRIVATE_KEY")
-PAID_URL = os.getenv("PAID_URL", "http://localhost:4021/weather")
+PAID_URL = os.getenv("PAID_URL")
 RECIPIENT_WALLET = os.getenv("RECIPIENT_WALLET")
 PAYMENT_AMOUNT = float(os.getenv("PAYMENT_AMOUNT"))
 
